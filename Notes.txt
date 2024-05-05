@@ -1,0 +1,28 @@
+Class
+- Fields, Initialization blocks, Constructors, Methods, Nested Classes
+
+Classes
+- Concrete
+- Nested { Tax tax = new Cart.Tax("tax type",0); }
+- Inner { Discount discount = new Cart().new Discount(""); }
+- Final [can't extends / can't be used as extends ]
+- POJO plain old java object
+- Abstract
+    - can't create an instance of this class type
+    - 
+
+Interfaces
+- all the methods in the class are public abstract
+- static void Method() doesn't require an object to call this.
+
+Abstract:
+    - extends keyword
+    - can have fields with all possible modifiers
+    - can't be extended simultaneously with other classes 
+        example: class A extends B, C [not possible]
+
+Interface:
+    - implements keyword
+    - All fields are constants
+    - can be implemented together with other interfaces
+        example: class A implements B, C [possible]
