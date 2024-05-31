@@ -1,32 +1,35 @@
-class Product{
+class Product {
     String name;
-    public Product(String name){
+
+    public Product(String name) {
         this.name = name;
     }
 
-    void ring(){
+    void ring() {
         System.out.println("default ringtone...");
     }
-    void getName(){
+
+    void getName() {
         System.out.println("Product name is " + this.name);
     }
 }
 
-class Phone extends Product{
+class Phone extends Product {
     String name;
-    public Phone(String name){
+
+    public Phone(String name) {
         super(name); // this line should be in the first line
         this.name = name + "-234dff";
     }
-    void getName(){
+
+    void getName() {
         System.out.println(super.name + " " + this.name);
         super.getName();
         super.ring();
     }
 }
 
-
-class Parent{
+class Parent {
     static {
         System.out.println("parent static init block");
     }
@@ -35,12 +38,12 @@ class Parent{
         System.out.println("parent init block");
     }
 
-    Parent(){
+    Parent() {
         System.out.println("parent constructor");
     }
 }
 
-class Child extends Parent{
+class Child extends Parent {
     static {
         System.out.println("child static init block");
     }
@@ -49,14 +52,13 @@ class Child extends Parent{
         System.out.println("child init block");
     }
 
-    Child(){
+    Child() {
         System.out.println("child constructor");
     }
 }
 
-
-public class Inheritance{
-    public static void main(String[] args){
+public class Inheritance {
+    public static void main(String[] args) {
         Product phone1 = new Phone("iphone");
         phone1.getName();
 

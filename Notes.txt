@@ -26,3 +26,12 @@ Interface:
     - All fields are constants
     - can be implemented together with other interfaces
         example: class A implements B, C [possible]
+
+
+Static:
+
+Dynamic binding: [Late binding, runtime polymorphism]
+
+Encapsulation:
+    - Access Modifiers [public, private, protected]
+    - Rules during overriding, you can increase the acces level but you cannot decrease.
