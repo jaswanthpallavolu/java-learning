@@ -44,6 +44,7 @@ class Parent {
 }
 
 class Child extends Parent {
+    private static final String name;
     static {
         System.out.println("child static init block");
     }
@@ -67,3 +68,9 @@ public class Inheritance {
         child = new Child();
     }
 }
+
+// private final String name;
+// The value of the field Child.name is not used [warning]
+
+// private static final String name;
+// The blank final field name may not have been initialized [error]
